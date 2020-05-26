@@ -87,6 +87,7 @@ header {
   }
   .userHelp {
     display: block;
+    padding: 12px 0 5px 0;
   }
   .signUpIcon {
     margin: 0 20px;
