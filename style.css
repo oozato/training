@@ -114,6 +114,25 @@ header {
   text-align: center;
 }
 
+.info {
+  background-color: #2a2e3d;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 24px;
+}
+
+.info a {
+  text-decoration: none;
+}
+
+.company {
+  color: #ffffff;
+  font-weight: normal;
+  font-size: 14px;
+  padding: 0 13px;
+  border-left: 1px solid #ffffff;
+}
+
 /* sp用画面 */
 @media screen and (max-width: 800px) {
   header {
@@ -161,5 +180,12 @@ header {
   .footerMessage {
     font-size: 12px;
     padding-bottom: 15px;
+  }
+  .info {
+    flex-wrap: wrap;
+  }
+
+  .company {
+    font-size: 12px;
   }
 }
