@@ -98,41 +98,47 @@ header {
   background-color: #2a2e3d;
   display: flex;
   justify-content: center;
-  padding-bottom: 24px;
-}
-.help a {
-  text-decoration: none;
+  padding-bottom: 30px;
 }
 .guide {
-  color: #ffffff;
   font-weight: normal;
   font-size: 14px;
   background-color: rgba(255, 255, 255, 0.05);
-  padding: 14px 100px;
+  flex: 1;
+  text-align: center;
   margin: 1px;
   white-space: nowrap;
-  text-align: center;
+  padding: 14px 45px;
 }
-
+.guide a {
+  text-decoration: none;
+  color: #ffffff;
+}
 .info {
   background-color: #2a2e3d;
   display: flex;
   justify-content: center;
-  padding-bottom: 24px;
-}
-
-.info a {
-  text-decoration: none;
+  padding-bottom: 40px;
+  padding-inline-start: 0;
+  list-style-type: none;
+  margin: 0;
 }
 
 .company {
-  color: #ffffff;
   font-weight: normal;
   font-size: 14px;
   padding: 0 13px;
+  white-space: nowrap;
   border-left: 1px solid #ffffff;
+  /* align-content: space-between; */
 }
-
+.company a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.company:first-child {
+  border: none;
+}
 /* sp用画面 */
 @media screen and (max-width: 800px) {
   header {
@@ -170,9 +176,6 @@ header {
     text-align: center;
     padding: 23px 0 37px 0;
   }
-  .guide {
-    padding: 14px 45px;
-  }
   .help {
     flex-wrap: wrap;
   }
@@ -181,11 +184,16 @@ header {
     font-size: 12px;
     padding-bottom: 15px;
   }
+
   .info {
     flex-wrap: wrap;
+    align-content: space-around;
   }
 
   .company {
     font-size: 12px;
+    /* word-wrap: break-word; */
+    justify-content: space-between;
+    flex: 1;
   }
 }
