@@ -75,13 +75,15 @@ header {
 }
 
 /*フッターのスタイル*/
+.footer {
+  background-color: #2a2e3d;
+}
 .yellowBar {
   background-color: #ffc306;
   width: 100%;
   padding-top: 5px;
 }
 .snsLink {
-  background-color: #2a2e3d;
   text-align: center;
   padding: 25px 0 29px 0;
 }
@@ -94,9 +96,7 @@ header {
 .snsIcon {
   padding: 0 10px;
 }
-.wrapper {
-  background-color: #2a2e3d;
-}
+
 .help {
   display: flex;
   flex-wrap: wrap;
@@ -105,7 +105,6 @@ header {
   margin: 0 auto;
 }
 .guide {
-  font-weight: normal;
   font-size: 14px;
   background-color: rgba(255, 255, 255, 0.05);
   margin: 1px;
@@ -116,19 +115,17 @@ header {
   color: #ffffff;
 }
 .info {
-  background-color: #2a2e3d;
   display: flex;
   justify-content: center;
   padding-bottom: 40px;
-  padding-inline-start: 0;
+  padding-left: 0;
   list-style-type: none;
   margin: 0;
 }
 
 .company {
-  font-weight: normal;
   font-size: 14px;
-  border-left: 1px solid #ffffff;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
   padding: 0 13px;
   white-space: nowrap;
 }
@@ -140,16 +137,13 @@ header {
   border: none;
 }
 
-.content {
-  background-color: #2a2e3d;
-  padding-bottom: 41px;
-}
 .note {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
   max-width: 1200px;
+  padding-bottom: 41px;
 }
 
 .footerIcon {
@@ -158,7 +152,6 @@ header {
 
 .copyRight {
   color: #cfd8dc;
-  font-weight: normal;
   font-size: 12px;
 }
 /* sp用画面 */
