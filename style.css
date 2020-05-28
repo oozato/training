@@ -94,7 +94,7 @@ header {
   padding-bottom: 8px;
 }
 .footer-sns-header-icon {
-  padding: 0 10px;
+  padding: 0 13px;
 }
 
 .footer-help {
@@ -146,7 +146,7 @@ header {
 }
 
 .footer-foot-brand {
-  width: 1100px;
+  width: 1060px;
   margin: 0 auto;
 }
 
@@ -158,6 +158,10 @@ header {
   color: #cfd8dc;
   font-size: 12px;
 }
+.footer-foot-search {
+  padding-right: 40px;
+}
+
 /* sp用画面 */
 @media screen and (max-width: 800px) {
   header {
@@ -229,8 +233,5 @@ header {
   }
   .footer-foot-brand-copyright {
     font-size: 10px;
-  }
-  .footer-foot {
-    padding-bottom: 45px;
   }
 }
