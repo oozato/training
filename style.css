@@ -99,7 +99,6 @@ header {
 }
 .help {
   display: flex;
-
   flex-wrap: wrap;
   padding-bottom: 40px;
   max-width: 1200px;
@@ -113,8 +112,6 @@ header {
   flex: 1 0 24%;
   text-align: center;
   padding: 14px 0px;
-}
-.guide a {
   text-decoration: none;
   color: #ffffff;
 }
@@ -143,15 +140,22 @@ header {
   border: none;
 }
 
-.note {
+.content {
   background-color: #2a2e3d;
   padding-bottom: 41px;
-  max-width: 1200px;
-  margin: 0 auto;
 }
+.note {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
 .footerIcon {
   padding-bottom: 15px;
 }
+
 .copyRight {
   color: #cfd8dc;
   font-weight: normal;
@@ -220,8 +224,11 @@ header {
   .company:nth-of-type(3) {
     border: none;
   }
-  .note {
+  .content {
     padding: 0 0 45px 18px;
+  }
+  .searchIcon {
+    display: none;
   }
   .copyRight {
     font-size: 10px;
