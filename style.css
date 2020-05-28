@@ -150,7 +150,7 @@ header {
   padding-bottom: 15px;
 }
 
-.warning {
+.copyright {
   color: #cfd8dc;
   font-size: 12px;
 }
@@ -223,7 +223,7 @@ header {
   .searchIcon {
     display: none;
   }
-  .warning {
+  .copyright {
     font-size: 10px;
   }
 }
