@@ -94,21 +94,25 @@ header {
 .snsIcon {
   padding: 0 10px;
 }
-.help {
+.wrapper {
   background-color: #2a2e3d;
+}
+.help {
   display: flex;
-  justify-content: center;
-  padding-bottom: 30px;
+
+  flex-wrap: wrap;
+  padding-bottom: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .guide {
   font-weight: normal;
   font-size: 14px;
   background-color: rgba(255, 255, 255, 0.05);
-  flex: 1;
-  text-align: center;
   margin: 1px;
-  white-space: nowrap;
-  padding: 14px 45px;
+  flex: 1 0 24%;
+  text-align: center;
+  padding: 14px 0px;
 }
 .guide a {
   text-decoration: none;
@@ -127,10 +131,9 @@ header {
 .company {
   font-weight: normal;
   font-size: 14px;
+  border-left: 1px solid #ffffff;
   padding: 0 13px;
   white-space: nowrap;
-  border-left: 1px solid #ffffff;
-  /* align-content: space-between; */
 }
 .company a {
   text-decoration: none;
@@ -138,6 +141,21 @@ header {
 }
 .company:first-child {
   border: none;
+}
+
+.note {
+  background-color: #2a2e3d;
+  padding-bottom: 41px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.footerIcon {
+  padding-bottom: 15px;
+}
+.copyRight {
+  color: #cfd8dc;
+  font-weight: normal;
+  font-size: 12px;
 }
 /* sp用画面 */
 @media screen and (max-width: 800px) {
@@ -176,24 +194,36 @@ header {
     text-align: center;
     padding: 23px 0 37px 0;
   }
-  .help {
-    flex-wrap: wrap;
-  }
 
   .footerMessage {
     font-size: 12px;
     padding-bottom: 15px;
   }
+  .help {
+    font-size: 12px;
+    padding-bottom: 27px;
+  }
 
+  .guide {
+    flex: 1 0 48%;
+  }
   .info {
     flex-wrap: wrap;
-    align-content: space-around;
+    padding-bottom: 56px;
   }
 
   .company {
     font-size: 12px;
-    /* word-wrap: break-word; */
-    justify-content: space-between;
-    flex: 1;
+    flex: 1 0 40%;
+    padding: 0 0 19px 19px;
+  }
+  .company:nth-of-type(3) {
+    border: none;
+  }
+  .note {
+    padding: 0 0 45px 18px;
+  }
+  .copyRight {
+    font-size: 10px;
   }
 }
