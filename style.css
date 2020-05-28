@@ -137,7 +137,7 @@ header {
   border: none;
 }
 
-.note {
+.attention {
   display: flex;
   justify-content: space-between;
   align-items: center;
