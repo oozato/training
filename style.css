@@ -1,5 +1,5 @@
 /*ヘッダーのスタイル*/
-header {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -15,53 +15,57 @@ header {
 }
 
 /*左アイコンのスタイル*/
-.leftIcon {
+.header-left {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.icon {
+.header-left-icon {
   margin-right: 15px;
 }
-.search {
+.header-left-search {
   font-size: 14px;
   padding: 0 10px;
   border-left: 1px solid #999;
   white-space: nowrap;
 }
-.search a {
+.header-left-search a {
   color: #263238;
   text-decoration: none;
 }
-.troubleCompany {
+.header-left-trouble {
   font-size: 14px;
   padding: 0 10px;
   border-left: 1px solid #999;
   white-space: nowrap;
 }
-.troubleCompany a {
+.header-left-trouble a {
   color: #1e88e5;
 }
 
 /*右アイコンのスタイル*/
-.rightIcon {
+.header-right {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.rightIcon a {
+.header-right a {
   text-decoration: none;
   font-weight: bold;
   color: #263238;
 }
-.userHelp {
+.header-right-signup,
+.header-right-login,
+.header-right-menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.message {
+.header-right-signup-text,
+.header-right-login-text,
+.header-right-menu-text {
   font-size: 13px;
   white-space: nowrap;
   margin: 0 30px 0 10px;
@@ -164,30 +168,29 @@ header {
 
 /* sp用画面 */
 @media screen and (max-width: 800px) {
-  header {
-    height: auto;
+  .header {
+    padding: 8px 15px 7px 10px;
   }
 
-  .search {
+  .header-left-search {
     display: none;
   }
-  .troubleCompany {
+  .header-left-trouble {
     display: none;
   }
-  .userHelp {
+  .header-right-signup,
+  .header-right-login,
+  .header-right-menu {
     display: block;
-    padding: 12px 0 5px 0;
   }
-  .signUpIcon {
+  .header-right-signup-icon,
+  .header-right-login-icon,
+  .header-right-menu-icon {
     margin: 0 20px;
   }
-  .loginIcon {
-    margin: 0 20px;
-  }
-  .menuIcon {
-    margin: 0 20px;
-  }
-  .message {
+  .header-right-signup-text,
+  .header-right-login-text,
+  .header-right-menu-text {
     font-size: 8px;
     margin: 0;
   }
