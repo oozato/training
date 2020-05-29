@@ -198,6 +198,9 @@
 .login-beginner-signup-item {
   display: flex;
 }
+.login-beginner-signup-item span {
+  font-size: 10px;
+}
 .login-beginner-signup-item-icon {
   padding-right: 10px;
 }
