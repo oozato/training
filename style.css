@@ -72,15 +72,130 @@
   text-align: center;
 }
 
-.dummy {
+/*ログイン画面のスタイル*/
+.login {
+  background-color: #e5e5e5;
   width: 100%;
-  height: 1500px;
-  background-color: black;
+  padding-top: 61px;
+}
+.login-back {
+  max-width: 980px;
+  margin: 0 auto;
+}
+.login-text {
+  font-weight: bold;
+  font-size: 28px;
+  color: #2a2e3d;
+  padding: 50px 0 38px 0;
+}
+.login-form {
+  background-color: #ffffff;
+  display: flex;
+  border-radius: 8px;
+}
+
+.login-form-left {
+  padding: 40px 0 40px 60px;
+}
+.login-form-left-boader {
+  padding: 10px 60px 10px 0;
+  border-right: 1px solid #cfd8dc;
+}
+.login-form-id,
+.login-form-pass {
+  padding-bottom: 15px;
+  color: #455a64;
+  font-weight: bold;
+  font-size: 18px;
+}
+.login-form-id-input,
+.login-form-pass-input {
+  border: 1px solid #b0bec5;
+  border-radius: 4px;
+  width: 100%;
+  font-size: 18px;
+  padding: 13px 0px;
+  margin-top: 13px;
+}
+.login-form-forgetpass {
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px 0 40px;
+}
+.login-form-forgetpass-text {
+  color: #607d8b;
+  font-weight: bold;
+  font-size: 14px;
+  padding-right: 5px;
+}
+.login-form-permission {
+  text-align: center;
+  font-size: 14px;
+  width: 60%;
+  margin: 0 auto;
+}
+.login-form-permission a {
+  color: #1e88e5;
+}
+.login-form-agree {
+  text-align: center;
+  padding-top: 20px;
+}
+.login-form-agree-button {
+  background-color: #f9a406;
+  border-radius: 60px;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 15.5px 112px;
+  color: #ffffff;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  outline: none;
+}
+.login-form-right {
+  padding: 115px 60px 50px;
+}
+.login-form-facebook_text {
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  color: #455a64;
+  padding-bottom: 89px;
+}
+.login-form-facebook {
+  margin-top: 113px;
+}
+.login-form-facebook-button {
+  background: #546e7a;
+  border-radius: 60px;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 15.5px 97.13px;
+  color: #ffffff;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  outline: none;
 }
 
 /*フッターのスタイル*/
 .footer {
   background-color: #2a2e3d;
+}
+.footer-page_return {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 18px 30px 12px 0;
+  display: flex;
+  justify-content: flex-end;
+  text-decoration: none;
+  color: #455a64;
+  font-weight: bold;
+}
+.footer-page_return-text {
+  font-size: 14px;
+  padding-left: 4px;
 }
 .footer-bar {
   background-color: #ffc306;
