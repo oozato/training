@@ -67,7 +67,7 @@ body {
   padding-right: 8px;
 }
 .head-right-signup::before {
-  content: url(head_signupIcon.svg);
+  content: url(Icon/head_signupIcon.svg);
 }
 .head-right-login {
   white-space: nowrap;
@@ -76,7 +76,7 @@ body {
   align-items: center;
 }
 .head-right-login::before {
-  content: url(loginIcon.svg);
+  content: url(Icon/loginIcon.svg);
 }
 .head-right-menu {
   white-space: nowrap;
@@ -85,7 +85,7 @@ body {
   align-items: center;
 }
 .head-right-menu::before {
-  content: url(menuIcon.svg);
+  content: url(Icon/menuIcon.svg);
 }
 .dummy {
   background-color: black;
@@ -165,14 +165,10 @@ body {
 }
 .login-form-permission {
   font-size: 14px;
-  margin: 0;
-  text-align: center;
 }
-
 .login-form-permission-message {
   display: inline-block;
 }
-
 .login-form-permission-text {
   color: #1e88e5;
 }
@@ -195,7 +191,6 @@ button {
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.24), 0px 1px 3px rgba(0, 0, 0, 0.12);
 }
 .login-form-right {
-  text-align: center;
   display: flex;
   flex-flow: column;
   justify-content: flex-end;
@@ -249,7 +244,7 @@ button {
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.24), 0px 1px 3px rgba(0, 0, 0, 0.12);
 }
 .login-beginner-signup::before {
-  content: url(signupIcon.svg);
+  content: url(Icon/signupIcon.svg);
   padding-right: 5px;
 }
 .login-beginner-signup-option {
@@ -266,7 +261,7 @@ button {
   text-decoration: none;
 }
 .login-beginner-text::after {
-  content: url(arrow.svg);
+  content: url(Icon/arrow.svg);
   padding-left: 5px;
 }
 
