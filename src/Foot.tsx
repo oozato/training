@@ -14,7 +14,6 @@ function Foot() {
           <img src={ReturnIcon} />
           <div className="footer-page_return-text">ページの先頭へ戻る</div>
         </a>
-        <div className="footer-bar"></div>
         <div className="footer-sns">
           <div className="footer-sns-header">公式アカウント</div>
           <div>

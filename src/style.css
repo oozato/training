@@ -273,7 +273,7 @@ button {
 .footer-page_return {
   width: 100%;
   background-color: #ffffff;
-  padding: 18px 30px 12px 0;
+  padding: 18px 0 12px 0;
   display: flex;
   justify-content: flex-end;
   text-decoration: none;
@@ -282,14 +282,11 @@ button {
 }
 .footer-page_return-text {
   font-size: 14px;
-  padding-left: 4px;
+  padding: 0 30px 0 4px;
 }
-.footer-bar {
-  background-color: #ffc306;
-  width: 100%;
-  padding-top: 5px;
-}
+
 .footer-sns {
+  border-top: 5px solid #ffc306;
   text-align: center;
   padding: 25px 0 29px 0;
 }
@@ -363,7 +360,9 @@ button {
   font-size: 12px;
 }
 .footer-foot-search {
-  padding-right: 40px;
+  position: fixed;
+  bottom: 42px;
+  right: 40px;
 }
 
 /* sp用画面 */
@@ -528,9 +527,6 @@ button {
   }
   .footer-foot {
     padding: 0 0 45px 18px;
-  }
-  .footer-foot-search {
-    display: none;
   }
   .footer-foot-brand-copyright {
     font-size: 10px;
