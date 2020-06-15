@@ -534,4 +534,7 @@ button {
   .footer-foot-brand-copyright {
     font-size: 10px;
   }
+  .footer-foot-search {
+    right: 15px;
+  }
 }
