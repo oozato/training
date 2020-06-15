@@ -38,6 +38,7 @@ function login() {
                   </a>
                   に
                 </span>
+                <br />
                 <span className="login-form-permission-message">
                   同意の上、ご利用ください。
                 </span>
@@ -64,6 +65,7 @@ function login() {
                   </a>
                   に
                 </span>
+                <br />
                 <span className="login-form-permission-message">
                   同意の上、ご利用ください。
                 </span>
