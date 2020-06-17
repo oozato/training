@@ -500,6 +500,7 @@ button {
   /*フッターのスタイル*/
   .footer-page_return-text {
     font-size: 12px;
+    padding: 0 13px 0 4px;
   }
   .footer-sns {
     background-color: #2a2e3d;
