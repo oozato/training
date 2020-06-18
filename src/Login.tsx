@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./style.css";
 import arrow from "./Icon/arrow.svg";
 
@@ -19,23 +20,23 @@ function login() {
                 <input type="text" className="login-form-input" />
               </div>
               <div className="login-form-forgetpass">
-                <a className="login-form-forgetpass-text" href="#">
+                <Link className="login-form-forgetpass-text" to="#">
                   パスワードをお忘れの方へ
-                </a>
+                </Link>
                 <img src={arrow} />
               </div>
               <p className="login-form-permission">
                 <span className="login-form-permission-message">
-                  <a className="login-form-permission-text" href="#">
+                  <Link className="login-form-permission-text" to="#">
                     利用規約
-                  </a>
+                  </Link>
                   と
-                  <a
+                  <Link
                     className="login-form-permission-text login-form-permission-message"
-                    href="#"
+                    to="#"
                   >
                     プライバシーポリシー
-                  </a>
+                  </Link>
                   に
                 </span>
                 <br />
@@ -53,16 +54,16 @@ function login() {
               </p>
               <p className="login-form-permission">
                 <span className="login-form-permission-message">
-                  <a className="login-form-permission-text" href="#">
+                  <Link className="login-form-permission-text" to="#">
                     利用規約
-                  </a>
+                  </Link>
                   と
-                  <a
+                  <Link
                     className="login-form-permission-text login-form-permission-message"
-                    href="#"
+                    to="#"
                   >
                     プライバシーポリシー
-                  </a>
+                  </Link>
                   に
                 </span>
                 <br />
@@ -82,9 +83,9 @@ function login() {
               会員登録
               <span className="login-beginner-signup-option">(無料)</span>
             </button>
-            <a href="#" className="login-beginner-text">
+            <Link to="#" className="login-beginner-text">
               はじめての方へ
-            </a>
+            </Link>
           </div>
         </div>
       </div>
