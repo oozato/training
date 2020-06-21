@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { BrowserRouter, Route, Link } from "react-router-dom";
 import "./style.css";
 import ReturnIcon from "./Icon/ReturnIcon.svg";
 import twitter from "./Icon/twitter.svg";

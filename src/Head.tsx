@@ -1,7 +1,7 @@
 import React from "react";
 import WhiteJobantennaIcon from "./Icon/WhiteJobantennaIcon.svg";
 import "./style.css";
-import { Link } from "react-router-dom";
+import { BrowserRouter, Route, Link } from "react-router-dom";
 
 function Head() {
   return (
@@ -25,10 +25,13 @@ function Head() {
               </Link>
             </div>
             <div className="head-right">
-              <Link to="#" className="head-right-signup head-right-icon">
+              <Link
+                to="/register"
+                className="head-right-signup head-right-icon"
+              >
                 会員登録
               </Link>
-              <Link to="#" className="head-right-login head-right-icon">
+              <Link to="/login" className="head-right-login head-right-icon">
                 ログイン
               </Link>
               <Link to="#" className="head-right-menu head-right-icon">
