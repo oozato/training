@@ -278,6 +278,7 @@ button {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin: 0 0 40px 0;
 }
 .register-stepbar-box {
   padding: 18px;
@@ -285,7 +286,7 @@ button {
   flex: 1 0 0%;
   font-weight: bold;
   font-size: 16px;
-  margin: 0 0 40px 0;
+  margin: 0;
 }
 /*box方向*/
 .box1 {
