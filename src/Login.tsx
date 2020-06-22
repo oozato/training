@@ -1,14 +1,14 @@
 import React from "react";
-import { BrowserRouter, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./style.css";
 import arrow from "./Icon/arrow.svg";
 
 function login() {
   return (
-    <div className="wrap">
-      <div className="login">
-        <div className="login-back">
-          <h1 className="login-text">ログイン</h1>
+    <div className="login">
+      <div className="login-container">
+        <div className="login-container-back">
+          <h1 className="login-title">ログイン</h1>
           <div className="login-form">
             <div className="login-form-left">
               <div className="login-form-id">
