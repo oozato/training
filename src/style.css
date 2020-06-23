@@ -327,8 +327,10 @@ button {
   padding: 50px 60px;
   border-radius: 8px;
 }
-.register-card:not(:last-child) {
-  margin: 0 0 30px 0;
+.card1,
+.card2,
+.card3 {
+  margin-bottom: 30px;
 }
 
 .register-card-form {
@@ -352,6 +354,25 @@ button {
   font-size: 18px;
   margin: 0 0 10px 0;
   color: #455a64;
+}
+#select_year,
+#select_month,
+#select_day {
+  height: 50px;
+  padding: 0 18px;
+  font-size: 16px;
+  color: #b0bec5;
+  background-color: #ffffff;
+  border: 1px solid #b0bec5;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.register-card-form-group-date {
+  display: flex;
+  align-items: center;
+}
+.register-card-form-group-date-item {
+  margin: 0 10px;
 }
 .register-card-form-group-input {
   border: 1px solid #b0bec5;
@@ -720,15 +741,15 @@ button {
 
   .card1 {
     padding: 9px 10px 26px;
-    margin: 0 0px 20px;
+    margin: 0 0 20px;
   }
   .card2 {
     padding: 15px 10px 20px;
-    margin: 0 0px 20px;
+    margin: 0 0 20px;
   }
   .card3 {
     padding: 19px 10px 23px;
-    margin: 0 0px 20px;
+    margin: 0 0 20px;
   }
   .card4 {
     padding: 20px 10px;
