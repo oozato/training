@@ -20,7 +20,7 @@ function Register() {
           <p className="register-attention_message">
             ※<span className="necessary_message">必須</span>は必須項目です。
           </p>
-          <div className="register-card">
+          <div className="register-card card1">
             <p className="register-card-message">
               ※氏名は応募するまで企業へ表示されません。
             </p>
@@ -66,10 +66,10 @@ function Register() {
             </div>
           </div>
 
-          <div className="register-card">
+          <div className="register-card card2">
             <div className="register-card-form">
               <div className="register-card-form-group">
-                <p className="register-card-title">
+                <p className="register-card-form-group-title">
                   生年月日 <span className="necessary_message">必須</span>
                 </p>
                 <select id="select_year" name="year"></select>年
@@ -80,25 +80,31 @@ function Register() {
                 <p className="register-card-form-group-title">
                   性別 <span className="necessary_message">必須</span>
                 </p>
-                <input
-                  type="radio"
-                  name="性別"
-                  value="男"
-                  className="register-card-form-group-radio"
-                />
-                男
-                <input
-                  type="radio"
-                  name="性別"
-                  value="女"
-                  className="register-card-form-group-radio"
-                />
-                女
+                <div className="register-card-form-group-gender">
+                  <div className="register-card-form-group-gender-item">
+                    <input
+                      type="radio"
+                      name="性別"
+                      value="男"
+                      className="register-card-form-group-radio"
+                    />
+                    男
+                  </div>
+                  <div className="register-card-form-group-gender-item">
+                    <input
+                      type="radio"
+                      name="性別"
+                      value="女"
+                      className="register-card-form-group-radio"
+                    />
+                    女
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
-          <div className="register-card">
+          <div className="register-card card3">
             <div className="register-card-form-group">
               <p className="register-card-form-group-title">
                 ログインID(メールアドレス){" "}
@@ -115,7 +121,7 @@ function Register() {
             <p className="register-card-attention">
               ※メールアドレスはログイン時に使用します。
             </p>
-            <p className="register-card-message">
+            <p className="register-card-setmessage">
               ※ドメイン指定受信をされている場合は「jobantenna.jp」を指定受信設定してください
             </p>
 
@@ -149,16 +155,14 @@ function Register() {
             </div>
           </div>
 
-          <div className="register-card">
-            <div className="register-card-form">
+          <div className="register-card card4">
+            <div className="register-card-items">
               <div>
                 <p className="register-card-question">
-                  好条件の非公開求人のご紹介を受けますか？
+                  好条件の非公開求人の
+                  <br />
+                  ご紹介を受けますか？
                 </p>
-                <Link to="#" className="register-card-guide">
-                  <p className="register-card-guide-text">非公開求人について</p>
-                  <img src={question_btn} />
-                </Link>
               </div>
 
               <div className="register-card-form-group-guide_check">
@@ -169,10 +173,18 @@ function Register() {
                 />
                 <label>はい</label>
               </div>
+              <Link to="#" className="register-card-guide">
+                <p className="register-card-guide-text">非公開求人について</p>
+                <img src={question_btn} />
+              </Link>
             </div>
           </div>
-          <button>入力内容を確認する</button>
-          <button>キャンセル</button>
+          <div className="register-button">
+            <button className="register-button-confirm">
+              入力内容を確認する
+            </button>
+            <button className="register-button-cancel">キャンセル</button>
+          </div>
         </div>
       </div>
     </div>
