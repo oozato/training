@@ -295,14 +295,37 @@ button {
 .box1 {
   color: #ffc306;
   background-color: #546e7a;
+  border-radius: 8px 0 0 8px;
 }
+
 .box2 {
   color: #ffffff;
   background-color: #607d8b;
+  position: relative;
 }
+.box2::before {
+  content: "";
+  border-top: 30px solid transparent;
+  border-left: 25px solid #546e7a;
+  border-bottom: 30px solid transparent;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.box2::after {
+  content: "";
+  border-top: 30px solid transparent;
+  border-left: 25px solid #607d8b;
+  border-bottom: 30px solid transparent;
+  position: absolute;
+  right: -25px;
+  top: 0;
+}
+
 .box3 {
   color: #ffffff;
   background-color: #78909c;
+  border-radius: 0 8px 8px 0;
 }
 .register-input_message {
   font-weight: normal;
@@ -724,6 +747,30 @@ button {
   .register-stepbar-box {
     font-size: 12px;
     padding: 17px;
+  }
+  .box1 {
+    border-radius: 4px 0 0 4px;
+  }
+  .box2::before {
+    content: "";
+    border-top: 26px solid transparent;
+    border-left: 20px solid #546e7a;
+    border-bottom: 26px solid transparent;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .box2::after {
+    content: "";
+    border-top: 26px solid transparent;
+    border-left: 20px solid #607d8b;
+    border-bottom: 26px solid transparent;
+    position: absolute;
+    right: -20px;
+    top: 0;
+  }
+  .box3 {
+    border-radius: 0 4px 4px 0;
   }
   .register-input_message {
     font-size: 14px;
