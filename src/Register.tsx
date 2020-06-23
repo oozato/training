@@ -288,7 +288,7 @@ function Register() {
               <div className="register-card-form">
                 <div>
                   <input
-                    type="{{textOrPassword()}}"
+                    type="password"
                     placeholder="半角英数英数8文字〜12文字以内"
                     className="register-card-form-group-input"
                     name="password"
@@ -320,7 +320,6 @@ function Register() {
                   ご紹介を受けますか？
                 </p>
               </div>
-
               <div className="register-card-form-group-guide_check">
                 <input
                   type="checkbox"
