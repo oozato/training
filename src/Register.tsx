@@ -175,27 +175,28 @@ class Register extends React.Component {
                   パスワード <span className="necessary_message">必須</span>
                 </p>
                 <div className="register-card-form">
-                  <div>
-                    <input
-                      type="password"
-                      placeholder="半角英数英数8文字〜12文字以内"
-                      className="register-card-form-group-input"
-                      name="password"
-                      ng-model="data.password"
-                      ng-minlength="8"
-                      ng-maxlength="12"
-                      pattern="/^[a-zA-Z0-9]*$/"
-                      required
-                    />
-                  </div>
+                  <input
+                    type="password"
+                    placeholder="半角英数英数8文字〜12文字以内"
+                    className="register-card-form-group-input"
+                    name="password"
+                    ng-model="data.password"
+                    ng-minlength="8"
+                    ng-maxlength="12"
+                    pattern="/^[a-zA-Z0-9]*$/"
+                    required
+                  />
                   <div className="register-card-form-group-pass_check">
-                    <input
-                      type="checkbox"
-                      id="passwordVisible"
-                      ng-model="passwordVisible"
-                      required
-                    />
-                    <label>パスワードを表示する</label>
+                    <div className="register-card-form-group-pass_check-item">
+                      <label>
+                        <input
+                          type="checkbox"
+                          className="register-card-form-group-pass_check-item-box"
+                          required
+                        />
+                        パスワードを表示する
+                      </label>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -210,13 +211,18 @@ class Register extends React.Component {
                     ご紹介を受けますか？
                   </p>
                 </div>
+
                 <div className="register-card-form-group-guide_check">
-                  <input
-                    type="checkbox"
-                    id="passwordVisible"
-                    ng-model="passwordVisible"
-                  />
-                  <label>はい</label>
+                  <div className="register-card-form-group-guide_check-item">
+                    <label>
+                      <input
+                        type="checkbox"
+                        className="register-card-form-group-guide_check-item-box"
+                        required
+                      />
+                      はい
+                    </label>
+                  </div>
                 </div>
                 <Link to="#" className="register-card-guide">
                   <p className="register-card-guide-text">非公開求人について</p>
