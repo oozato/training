@@ -384,11 +384,15 @@ button {
   height: 50px;
   padding: 0 18px;
   font-size: 16px;
-  color: #b0bec5;
+  color: #263238;
   background-color: #ffffff;
   border: 1px solid #b0bec5;
   box-sizing: border-box;
   border-radius: 4px;
+  -webkit-appearance: none;
+}
+.register-card-form-group-date-icon::after {
+  content: url(Icon/date_select.svg);
 }
 .register-card-form-group-date {
   display: flex;
@@ -422,8 +426,6 @@ button {
   margin: 0 6px 0 0;
 }
 .register-card-form-group-pass_check {
-  display: flex;
-  align-items: center;
   margin: auto 0;
   font-size: 14px;
   color: #263238;
@@ -463,8 +465,6 @@ button {
   margin: auto;
   font-size: 16px;
   color: #263238;
-  display: flex;
-  align-items: center;
 }
 #passwordVisible {
   width: 22px;
@@ -483,6 +483,7 @@ button {
 }
 .register-button-confirm {
   height: 60px;
+  font-weight: bold;
   font-size: 18px;
   color: #ffffff;
   background-color: #e53935;
@@ -493,6 +494,7 @@ button {
 }
 .register-button-cancel {
   height: 38px;
+  font-weight: bold;
   font-size: 14px;
   color: #263238;
   background-color: #ffffff;
