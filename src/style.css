@@ -466,11 +466,6 @@ button {
   color: #263238;
 }
 
-.register-card-form-group-guide_check-item,
-.register-card-form-group-pass_check-item {
-  margin: 0 0 0.5rem 0;
-  padding: 0;
-}
 .register-card-form-group-guide_check-item-box,
 .register-card-form-group-pass_check-item-box {
   position: relative;
@@ -482,10 +477,9 @@ button {
   z-index: 1;
   top: 0.125rem;
   left: 0.1875rem;
-  width: 0.75rem;
-  height: 0.375rem;
+  width: 0.9rem;
+  height: 0.4rem;
   content: "";
-  transform: rotate(-45deg) scale(0, 0);
   border: 2px solid #ffffff;
   border-top-style: none;
   border-right-style: none;
@@ -497,19 +491,16 @@ button {
 }
 .register-card-form-group-guide_check-item-box:checked:before,
 .register-card-form-group-pass_check-item-box:checked:before {
-  -webkit-transform: rotate(-45deg) scale(1, 1);
   transform: rotate(-45deg) scale(1, 1);
 }
 .register-card-form-group-guide_check-item-box:after,
 .register-card-form-group-pass_check-item-box:after {
   position: absolute;
   top: -0.125rem;
-  left: 0;
   width: 22px;
   height: 22px;
   box-sizing: border-box;
   content: "";
-  cursor: pointer;
   border: 1px solid #b0bec5;
   border-radius: 4px;
   background: #ffffff;
