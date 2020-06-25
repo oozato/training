@@ -291,18 +291,18 @@ button {
   margin: 0;
 }
 /*box方向*/
-.box1 {
+.register-stepbar-left {
   color: #ffc306;
   background-color: #546e7a;
   border-radius: 8px 0 0 8px;
 }
 
-.box2 {
+.register-stepbar-center {
   color: #ffffff;
   background-color: #607d8b;
   position: relative;
 }
-.box2::before {
+.register-stepbar-center::before {
   content: "";
   border-top: 30px solid transparent;
   border-left: 25px solid #546e7a;
@@ -311,7 +311,7 @@ button {
   left: 0;
   top: 0;
 }
-.box2::after {
+.register-stepbar-center::after {
   content: "";
   border-top: 30px solid transparent;
   border-left: 25px solid #607d8b;
@@ -321,7 +321,7 @@ button {
   top: 0;
 }
 
-.box3 {
+.register-stepbar-right {
   color: #ffffff;
   background-color: #78909c;
   border-radius: 0 8px 8px 0;
@@ -349,9 +349,7 @@ button {
   padding: 50px 60px;
   border-radius: 8px;
 }
-.card1,
-.card2,
-.card3 {
+.register-card:not(:nth-of-type(5)) {
   margin-bottom: 30px;
 }
 
@@ -422,11 +420,8 @@ button {
 }
 
 .register-card-form-group-radio {
-  font-size: 16px;
-  color: #263238;
-  width: 22px;
-  height: 22px;
-  margin: 0 6px 0 0;
+  position: absolute;
+  opacity: 0;
 }
 .register-card-form-group-pass_check {
   margin: auto 0;
@@ -475,32 +470,18 @@ button {
   position: relative;
   margin: 0 1rem 0 0;
 }
-.register-card-form-group-guide_check-item-box:before,
-.register-card-form-group-pass_check-item-box:before {
-  position: absolute;
-  z-index: 1;
-  top: 0.125rem;
-  left: 0.1875rem;
-  width: 0.9rem;
-  height: 0.4rem;
-  content: "";
-  border: 2px solid #ffffff;
-  border-top-style: none;
-  border-right-style: none;
-}
 .register-card-form-group-guide_check-item-box:checked::after,
 .register-card-form-group-pass_check-item-box:checked::after {
-  background-color: #f9a406;
-  border: 1px solid #f9a406;
+  background-image: url(Icon/checkbox.svg);
+  border: none;
+  z-index: 1;
 }
-.register-card-form-group-guide_check-item-box:checked:before,
-.register-card-form-group-pass_check-item-box:checked:before {
-  transform: rotate(-45deg) scale(1, 1);
-}
+
 .register-card-form-group-guide_check-item-box:after,
 .register-card-form-group-pass_check-item-box:after {
   position: absolute;
-  top: -0.125rem;
+  top: -0.2rem;
+  left: -0.2rem;
   width: 22px;
   height: 22px;
   box-sizing: border-box;
@@ -691,11 +672,11 @@ button {
   }
 
   /*ログイン画面のスタイル*/
-  .container {
+  .login-container {
     padding: 60px 0 81px;
   }
 
-  .container-back {
+  .login-container-back {
     margin: 15px auto 0;
   }
   .login-text {
@@ -784,28 +765,21 @@ button {
     font-size: 12px;
     padding: 17px;
   }
-  .box1 {
+  .register-stepbar-left {
     border-radius: 4px 0 0 4px;
   }
-  .box2::before {
-    content: "";
+  .register-stepbar-center::before {
     border-top: 26px solid transparent;
     border-left: 20px solid #546e7a;
     border-bottom: 26px solid transparent;
-    position: absolute;
-    left: 0;
-    top: 0;
   }
-  .box2::after {
-    content: "";
+  .register-stepbar-center::after {
     border-top: 26px solid transparent;
     border-left: 20px solid #607d8b;
     border-bottom: 26px solid transparent;
-    position: absolute;
     right: -20px;
-    top: 0;
   }
-  .box3 {
+  .register-stepbar-right {
     border-radius: 0 4px 4px 0;
   }
   .register-input_message {
@@ -822,20 +796,11 @@ button {
     margin: 0 0 15px 0;
   }
 
-  .card1 {
-    padding: 9px 10px 26px;
-    margin: 0 0 20px;
-  }
-  .card2 {
-    padding: 15px 10px 20px;
-    margin: 0 0 20px;
-  }
-  .card3 {
-    padding: 19px 10px 23px;
-    margin: 0 0 20px;
-  }
-  .card4 {
+  .register-card {
     padding: 20px 10px;
+  }
+  .register-card:not(:nth-of-type(5)) {
+    margin: 0 0 20px;
   }
   .register-card-message {
     font-size: 13px;

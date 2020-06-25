@@ -2,16 +2,17 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
 import question_btn from "./Icon/question_btn.svg";
-import date_select from "./Icon/date_select.svg";
-import { render } from "react-dom";
+import radio from "./Icon/radio.svg";
 
 class Register extends React.Component {
   render() {
+    var new_date = new Date();
+    var new_year = new_date.getFullYear();
     const year = [];
     const month = [];
     const day = [];
 
-    for (let i = 1920; i <= 2020; i++) {
+    for (let i = 1920; i <= new_year; i++) {
       year.push(<option value={i}>{i}</option>);
     }
     for (let j = 1; j <= 12; j++) {
@@ -27,9 +28,15 @@ class Register extends React.Component {
           <div className="register-container-back">
             <h1 className="register-title">新規会員登録 (無料)</h1>
             <div className="register-stepbar">
-              <p className="register-stepbar-box box1">会員情報入力</p>
-              <p className="register-stepbar-box box2">会員情報確認</p>
-              <p className="register-stepbar-box box3">登録完了！</p>
+              <p className="register-stepbar-box register-stepbar-left">
+                会員情報入力
+              </p>
+              <p className="register-stepbar-box register-stepbar-center">
+                会員情報確認
+              </p>
+              <p className="register-stepbar-box  register-stepbar-right">
+                登録完了！
+              </p>
             </div>
             <h2 className="register-input_message">
               下記の項目を入力してください。
@@ -37,7 +44,7 @@ class Register extends React.Component {
             <p className="register-attention_message">
               ※<span className="necessary_message">必須</span>は必須項目です。
             </p>
-            <div className="register-card card1">
+            <div className="register-card ">
               <p className="register-card-message">
                 ※氏名は応募するまで企業へ表示されません。
               </p>
@@ -89,7 +96,7 @@ class Register extends React.Component {
               </div>
             </div>
 
-            <div className="register-card card2">
+            <div className="register-card ">
               <div className="register-card-form">
                 <div className="register-card-form-group">
                   <p className="register-card-form-group-title">
@@ -126,6 +133,7 @@ class Register extends React.Component {
                     <p className="register-card-form-group-date-item">日</p>
                   </div>
                 </div>
+
                 <div className="register-card-form-group">
                   <p className="register-card-form-group-title">
                     性別 <span className="necessary_message">必須</span>
@@ -139,8 +147,12 @@ class Register extends React.Component {
                         className="register-card-form-group-radio"
                         required
                       />
-                      男
+                      <img src={radio} />
+                      <label className="register-card-form-group-label">
+                        男
+                      </label>
                     </div>
+
                     <div className="register-card-form-group-gender-item">
                       <input
                         type="radio"
@@ -149,14 +161,17 @@ class Register extends React.Component {
                         className="register-card-form-group-radio"
                         required
                       />
-                      女
+                      <img src={radio} />
+                      <label className="register-card-form-group-label">
+                        女
+                      </label>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="register-card card3">
+            <div className="register-card ">
               <div className="register-card-form-group">
                 <p className="register-card-form-group-title">
                   ログインID(メールアドレス){" "}
@@ -198,7 +213,6 @@ class Register extends React.Component {
                         <input
                           type="checkbox"
                           className="register-card-form-group-pass_check-item-box"
-                          required
                         />
                         パスワードを表示する
                       </label>
@@ -208,7 +222,7 @@ class Register extends React.Component {
               </div>
             </div>
 
-            <div className="register-card card4">
+            <div className="register-card ">
               <div className="register-card-items">
                 <div>
                   <p className="register-card-question">
@@ -224,7 +238,6 @@ class Register extends React.Component {
                       <input
                         type="checkbox"
                         className="register-card-form-group-guide_check-item-box"
-                        required
                       />
                       はい
                     </label>
