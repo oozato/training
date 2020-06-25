@@ -105,12 +105,20 @@ class Register extends React.Component {
                       {year}
                     </select>
                     <p className="register-card-form-group-date-item">年</p>
-                    <select id="select_month" name="month">
+                    <select
+                      id="select_month"
+                      name="month"
+                      className="register-card-form-group-date-icon"
+                    >
                       <option value="">-</option>
                       {month}
                     </select>
                     <p className="register-card-form-group-date-item">月</p>
-                    <select id="select_day" name="day">
+                    <select
+                      id="select_day"
+                      name="day"
+                      className="register-card-form-group-date-icon"
+                    >
                       <option value="">-</option>
                       {day}
                     </select>
@@ -179,11 +187,9 @@ class Register extends React.Component {
                     type="password"
                     placeholder="半角英数英数8文字〜12文字以内"
                     className="register-card-form-group-input"
-                    name="password"
-                    ng-model="data.password"
-                    ng-minlength="8"
-                    ng-maxlength="12"
                     pattern="/^[a-zA-Z0-9]*$/"
+                    minLength={8}
+                    maxLength={12}
                     required
                   />
                   <div className="register-card-form-group-pass_check">
