@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, Link } from "react-router-dom";
-import "./style.css";
+import "./style.scss";
 import ReturnIcon from "./Icon/ReturnIcon.svg";
 import twitter from "./Icon/twitter.svg";
 import facebook from "./Icon/facebook.svg";

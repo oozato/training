@@ -1,6 +1,6 @@
 import React from "react";
 import WhiteJobantennaIcon from "./Icon/WhiteJobantennaIcon.svg";
-import "./style.css";
+import "./style.scss";
 import { BrowserRouter, Route, Link } from "react-router-dom";
 
 function Head() {

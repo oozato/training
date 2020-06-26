@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./style.css";
+import "./style.scss";
 import question_btn from "./Icon/question_btn.svg";
 import radio from "./Icon/radio.svg";
 
