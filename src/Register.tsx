@@ -147,16 +147,7 @@ class Register extends React.Component {
                       />
                       <div className="register-card-form-group-gender-container-tile">
                         <div className="register-card-form-group-gender-container-tile-icon">
-                          <svg
-                            width="12"
-                            height="12"
-                            viewBox="0 0 12 12"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <circle cx="6" cy="6" r="6" />
-                            <path d="M0 0h24v24H0z" fill="none" />
-                          </svg>
+                          <img src={radio} alt="" />
                         </div>
                         <label className="register-card-form-group-gender-container-tile-label">
                           男
@@ -171,16 +162,7 @@ class Register extends React.Component {
                       />
                       <div className="register-card-form-group-gender-container-tile">
                         <div className="register-card-form-group-gender-container-tile-icon">
-                          <svg
-                            width="12"
-                            height="12"
-                            viewBox="0 0 12 12"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <circle cx="6" cy="6" r="6" />
-                            <path d="M0 0h24v24H0z" fill="none" />
-                          </svg>
+                          <img src={radio} alt="" />
                         </div>
                         <label className="register-card-form-group-gender-container-tile-label">
                           女
