@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
 import question_btn from "./Icon/question_btn.svg";
-import radio from "./Icon/radio.svg";
+import radio_checked_icon from "./Icon/radio_checked_icon.svg";
 
 class Register extends React.Component {
   render() {
@@ -139,32 +139,53 @@ class Register extends React.Component {
                     性別 <span className="necessary_message">必須</span>
                   </p>
                   <div className="register-card-form-group-gender">
-                    <div className="register-card-form-group-gender-item">
+                    <div className="register-card-form-group-gender-container">
                       <input
+                        className="register-card-form-group-gender-container-button"
                         type="radio"
-                        name="性別"
-                        value="男"
-                        className="register-card-form-group-radio"
-                        required
+                        name="radio"
                       />
-                      <img src={radio} />
-                      <label className="register-card-form-group-label">
-                        男
-                      </label>
+                      <div className="register-card-form-group-gender-container-tile">
+                        <div className="register-card-form-group-gender-container-tile-icon">
+                          <svg
+                            width="12"
+                            height="12"
+                            viewBox="0 0 12 12"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="6" cy="6" r="6" />
+                            <path d="M0 0h24v24H0z" fill="none" />
+                          </svg>
+                        </div>
+                        <label className="register-card-form-group-gender-container-tile-label">
+                          男
+                        </label>
+                      </div>
                     </div>
-
-                    <div className="register-card-form-group-gender-item">
+                    <div className="register-card-form-group-gender-container">
                       <input
+                        className="register-card-form-group-gender-container-button"
                         type="radio"
-                        name="性別"
-                        value="女"
-                        className="register-card-form-group-radio"
-                        required
+                        name="radio"
                       />
-                      <img src={radio} />
-                      <label className="register-card-form-group-label">
-                        女
-                      </label>
+                      <div className="register-card-form-group-gender-container-tile">
+                        <div className="register-card-form-group-gender-container-tile-icon">
+                          <svg
+                            width="12"
+                            height="12"
+                            viewBox="0 0 12 12"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="6" cy="6" r="6" />
+                            <path d="M0 0h24v24H0z" fill="none" />
+                          </svg>
+                        </div>
+                        <label className="register-card-form-group-gender-container-tile-label">
+                          女
+                        </label>
+                      </div>
                     </div>
                   </div>
                 </div>

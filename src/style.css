@@ -410,18 +410,59 @@ button {
   padding: 15px 15px;
   font-size: 16px;
 }
+
+.radio-tile-group {
+  display: flex;
+}
+.input-container {
+  position: relative;
+}
+.register-card-form-group-gender-container-button {
+  opacity: 0;
+  position: absolute;
+}
+.register-card-form-group-gender-container-tile {
+  display: flex;
+  align-items: center;
+  margin-right: 29px;
+}
+.register-card-form-group-gender-container-tile-icon {
+  background-color: #fff;
+  width: 24px;
+  height: 24px;
+  border-radius: 30px;
+  border: 1px solid #b0bec5;
+  box-sizing: border-box;
+}
+.register-card-form-group-gender-container-tile-icon svg {
+  fill: #fff;
+  background-color: #fff;
+  width: 12px;
+  height: 12px;
+  border-radius: 30px;
+  margin: 0 0 1px 5px;
+}
+.register-card-form-group-gender-container-tilelabel {
+  font-size: 16px;
+  padding-left: 6px;
+  color: #263238;
+}
+
+.register-card-form-group-gender-container-button:checked
+  + .register-card-form-group-gender-container-tile
+  .register-card-form-group-gender-container-tile-icon
+  svg {
+  fill: #f9a406;
+  background-color: #fff;
+}
 .register-card-form-group-gender {
   display: flex;
 }
-.register-card-form-group-gender-item {
-  margin: 0 29px 0 0;
+.register-card-form-group-gender-container {
+  /* margin: 0 29px 0 0;
   display: flex;
-  align-items: center;
-}
-
-.register-card-form-group-radio {
-  position: absolute;
-  opacity: 0;
+  align-items: center; */
+  position: relative;
 }
 .register-card-form-group-pass_check {
   margin: auto 0;
