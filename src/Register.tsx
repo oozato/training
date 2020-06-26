@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
 import question_btn from "./Icon/question_btn.svg";
-import radio_checked_icon from "./Icon/radio_checked_icon.svg";
+import radio from "./Icon/radio.svg";
 
 class Register extends React.Component {
   render() {

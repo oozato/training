@@ -375,11 +375,25 @@ button {
   margin: 0 0 10px 0;
   color: #455a64;
 }
-#select_year,
+#select_year {
+  height: 50px;
+  width: 94px;
+  padding: 0 0 0 15px;
+  font-size: 16px;
+  color: #263238;
+  background-color: #ffffff;
+  border: 1px solid #b0bec5;
+  box-sizing: border-box;
+  border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
 #select_month,
 #select_day {
   height: 50px;
-  padding: 0 28px;
+  width: 74px;
+  padding: 0 0 0 15px;
   font-size: 16px;
   color: #263238;
   background-color: #ffffff;
@@ -433,6 +447,7 @@ button {
   border-radius: 30px;
   border: 1px solid #b0bec5;
   box-sizing: border-box;
+  margin-right: 6px;
 }
 .register-card-form-group-gender-container-tile-icon svg {
   fill: #fff;
@@ -447,7 +462,6 @@ button {
   padding-left: 6px;
   color: #263238;
 }
-
 .register-card-form-group-gender-container-button:checked
   + .register-card-form-group-gender-container-tile
   .register-card-form-group-gender-container-tile-icon
@@ -861,6 +875,20 @@ button {
   .register-card-form-group-title {
     font-size: 16px;
     margin: 0 0 10px 0;
+  }
+  #select_year {
+    height: 45px;
+    width: 80px;
+    padding: 0 0 0 10px;
+  }
+  #select_month,
+  #select_day {
+    height: 45px;
+    width: 60px;
+    padding: 0 0 0 10px;
+  }
+  .register-card-form-group-date-icon {
+    background-position: right 10px center;
   }
   .register-card-attention {
     font-size: 12px;
