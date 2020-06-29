@@ -6,20 +6,19 @@ import radio from "./Icon/radio.svg";
 
 class Register extends React.Component {
   render() {
-    var new_date = new Date();
-    var new_year = new_date.getFullYear();
+    const CURRENT_YEAR = new Date().getFullYear();
     const year = [];
     const month = [];
     const day = [];
 
-    for (let i = 1920; i <= new_year; i++) {
-      year.push(<option value={i}>{i}</option>);
+    for (let i = CURRENT_YEAR - 100; i <= CURRENT_YEAR; i++) {
+      year.push(i);
     }
     for (let j = 1; j <= 12; j++) {
-      month.push(<option value={j}>{j}</option>);
+      month.push(j);
     }
     for (let k = 1; k <= 31; k++) {
-      day.push(<option value={k}>{k}</option>);
+      day.push(k);
     }
 
     return (
@@ -53,6 +52,7 @@ class Register extends React.Component {
                   姓 <span className="necessary_message">必須</span>
                 </p>
                 <input
+                  name="family name"
                   type="text"
                   placeholder="例）琉球"
                   className="register-container-card-form-group-input"
@@ -64,6 +64,7 @@ class Register extends React.Component {
                   名 <span className="necessary_message">必須</span>
                 </p>
                 <input
+                  name="first name"
                   type="text"
                   placeholder="例）太郎"
                   className="register-container-card-form-group-input"
@@ -76,6 +77,7 @@ class Register extends React.Component {
                 </p>
 
                 <input
+                  name="family name"
                   type="text"
                   placeholder="例）りゅうきゅう"
                   className="register-container-card-form-group-input"
@@ -87,6 +89,7 @@ class Register extends React.Component {
                 </p>
 
                 <input
+                  name="first name"
                   type="text"
                   placeholder="例）たろう"
                   className="register-container-card-form-group-input"
@@ -108,7 +111,9 @@ class Register extends React.Component {
                     className="register-container-card-form-group-date-icon"
                   >
                     <option value="">----</option>
-                    {year}
+                    {year.map((e) => {
+                      return <option value={e}>{e}</option>;
+                    })}
                   </select>
                   <p className="register-container-card-form-group-date-item">
                     年
@@ -119,7 +124,9 @@ class Register extends React.Component {
                     className="register-container-card-form-group-date-icon"
                   >
                     <option value="">-</option>
-                    {month}
+                    {month.map((e) => {
+                      return <option value={e}>{e}</option>;
+                    })}
                   </select>
                   <p className="register-container-card-form-group-date-item">
                     月
@@ -130,7 +137,9 @@ class Register extends React.Component {
                     className="register-container-card-form-group-date-icon"
                   >
                     <option value="">-</option>
-                    {day}
+                    {day.map((e) => {
+                      return <option value={e}>{e}</option>;
+                    })}
                   </select>
 
                   <p className="register-container-card-form-group-date-item">
@@ -148,7 +157,7 @@ class Register extends React.Component {
                     <input
                       className="register-container-card-form-group-gender-container-button"
                       type="radio"
-                      name="radio"
+                      name="radio button"
                     />
                     <div className="register-container-card-form-group-gender-container-tile">
                       <div className="register-container-card-form-group-gender-container-tile-icon">
@@ -163,7 +172,7 @@ class Register extends React.Component {
                     <input
                       className="register-container-card-form-group-gender-container-button"
                       type="radio"
-                      name="radio"
+                      name="radio button"
                     />
                     <div className="register-container-card-form-group-gender-container-tile">
                       <div className="register-container-card-form-group-gender-container-tile-icon">
@@ -182,14 +191,13 @@ class Register extends React.Component {
           <div className="register-container-card ">
             <div className="register-container-card-form-group">
               <p className="register-container-card-form-group-title">
-                ログインID(メールアドレス){" "}
-                <span className="necessary_message">必須</span>
+                ログインID(メールアドレス)
               </p>
               <input
                 type="email"
                 placeholder="例）taro@jobantenna.jp"
                 className="register-container-card-form-group-input"
-                name="メールアドレス"
+                name="email"
                 id="email"
                 required
               />
@@ -203,14 +211,14 @@ class Register extends React.Component {
 
             <div className="register-container-card-form-group">
               <p className="register-container-card-form-group-title">
-                パスワード <span className="necessary_message">必須</span>
+                パスワード
               </p>
               <div className="register-container-card-form">
                 <input
+                  name="pass"
                   type="password"
-                  placeholder="半角英数英数8文字〜12文字以内"
+                  placeholder="半角英数8文字〜12文字以内"
                   className="register-container-card-form-group-input"
-                  pattern="/^[a-zA-Z0-9]*$/"
                   minLength={8}
                   maxLength={12}
                   required
@@ -219,6 +227,7 @@ class Register extends React.Component {
                   <div className="register-container-card-form-group-pass_check-item">
                     <label>
                       <input
+                        name="checkbox"
                         type="checkbox"
                         className="register-container-card-form-group-pass_check-item-box"
                       />
@@ -244,6 +253,7 @@ class Register extends React.Component {
                 <div className="register-container-card-form-group-guide_check-item">
                   <label>
                     <input
+                      name="checkbox"
                       type="checkbox"
                       className="register-container-card-form-group-guide_check-item-box"
                     />
