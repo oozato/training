@@ -6,12 +6,12 @@ import radio from "./Icon/radio.svg";
 
 class Register extends React.Component {
   render() {
-    const new_year = new Date().getFullYear();
+    const current_year = new Date().getFullYear();
     const year = [];
     const month = [];
     const day = [];
 
-    for (let i = 1920; i <= new_year; i++) {
+    for (let i = 1920; i <= current_year; i++) {
       year.push(i);
     }
     for (let j = 1; j <= 12; j++) {
