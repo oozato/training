@@ -357,10 +357,40 @@ button {
           &-date {
             display: flex;
             align-items: center;
-            &-icon {
+            &-year {
               background-image: url(Icon/date_select.svg);
               background-repeat: no-repeat;
               background-position: right 15px center;
+              height: 50px;
+              width: 94px;
+              padding: 0 0 0 15px;
+              font-size: 16px;
+              color: #263238;
+              background-color: #ffffff;
+              border: 1px solid #b0bec5;
+              box-sizing: border-box;
+              border-radius: 4px;
+              -webkit-appearance: none;
+              -moz-appearance: none;
+              appearance: none;
+            }
+            &-month,
+            &-day {
+              background-image: url(Icon/date_select.svg);
+              background-repeat: no-repeat;
+              background-position: right 15px center;
+              height: 50px;
+              width: 74px;
+              padding: 0 0 0 15px;
+              font-size: 16px;
+              color: #263238;
+              background-color: #ffffff;
+              border: 1px solid #b0bec5;
+              box-sizing: border-box;
+              border-radius: 4px;
+              -webkit-appearance: none;
+              -moz-appearance: none;
+              appearance: none;
             }
             &-item {
               margin: 0 10px;
@@ -502,36 +532,6 @@ button {
   padding: 3px 9px;
   background-color: #e53935;
   border-radius: 3px;
-}
-
-#select_year {
-  height: 50px;
-  width: 94px;
-  padding: 0 0 0 15px;
-  font-size: 16px;
-  color: #263238;
-  background-color: #ffffff;
-  border: 1px solid #b0bec5;
-  box-sizing: border-box;
-  border-radius: 4px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-#select_month,
-#select_day {
-  height: 50px;
-  width: 74px;
-  padding: 0 0 0 15px;
-  font-size: 16px;
-  color: #263238;
-  background-color: #ffffff;
-  border: 1px solid #b0bec5;
-  box-sizing: border-box;
-  border-radius: 4px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
 }
 
 .register-container-card-form-group-gender-container-button:checked
