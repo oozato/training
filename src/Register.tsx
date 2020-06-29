@@ -6,8 +6,7 @@ import radio from "./Icon/radio.svg";
 
 class Register extends React.Component {
   render() {
-    var new_date = new Date();
-    var new_year = new Date().getFullYear();
+    const new_year = new Date().getFullYear();
     const year = [];
     const month = [];
     const day = [];
