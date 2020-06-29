@@ -191,7 +191,8 @@ class Register extends React.Component {
           <div className="register-container-card ">
             <div className="register-container-card-form-group">
               <p className="register-container-card-form-group-title">
-                ログインID(メールアドレス)
+                ログインID(メールアドレス){" "}
+                <span className="necessary_message">必須</span>
               </p>
               <input
                 type="email"
@@ -211,7 +212,7 @@ class Register extends React.Component {
 
             <div className="register-container-card-form-group">
               <p className="register-container-card-form-group-title">
-                パスワード
+                パスワード <span className="necessary_message">必須</span>
               </p>
               <div className="register-container-card-form">
                 <input
