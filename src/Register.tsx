@@ -7,19 +7,19 @@ import radio from "./Icon/radio.svg";
 class Register extends React.Component {
   render() {
     var new_date = new Date();
-    var new_year = new_date.getFullYear();
+    var new_year = new Date().getFullYear();
     const year = [];
     const month = [];
     const day = [];
 
     for (let i = 1920; i <= new_year; i++) {
-      year.push(<option value={i}>{i}</option>);
+      year.push(i);
     }
     for (let j = 1; j <= 12; j++) {
-      month.push(<option value={j}>{j}</option>);
+      month.push(j);
     }
     for (let k = 1; k <= 31; k++) {
-      day.push(<option value={k}>{k}</option>);
+      day.push(k);
     }
 
     return (
@@ -108,7 +108,9 @@ class Register extends React.Component {
                     className="register-container-card-form-group-date-icon"
                   >
                     <option value="">----</option>
-                    {year}
+                    {year.map(e => {
+                      return <option value={e}>{e}</option>;
+                    })}
                   </select>
                   <p className="register-container-card-form-group-date-item">
                     年
@@ -119,7 +121,9 @@ class Register extends React.Component {
                     className="register-container-card-form-group-date-icon"
                   >
                     <option value="">-</option>
-                    {month}
+                    {month.map(e => {
+                      return <option value={e}>{e}</option>;
+                    })}
                   </select>
                   <p className="register-container-card-form-group-date-item">
                     月
@@ -130,7 +134,9 @@ class Register extends React.Component {
                     className="register-container-card-form-group-date-icon"
                   >
                     <option value="">-</option>
-                    {day}
+                    {day.map(e => {
+                      return <option value={e}>{e}</option>;
+                    })}
                   </select>
 
                   <p className="register-container-card-form-group-date-item">
