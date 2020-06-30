@@ -827,8 +827,21 @@ button {
               font-size: 16px;
               margin: 0 0 10px 0;
             }
-            &-date-icon {
-              background-position: right 10px center;
+
+            &-date {
+              &-year {
+                background-position: right 10px center;
+                height: 45px;
+                width: 80px;
+                padding: 0 0 0 10px;
+              }
+              &-month,
+              &-day {
+                background-position: right 10px center;
+                height: 45px;
+                width: 60px;
+                padding: 0 0 0 10px;
+              }
             }
             &-pass_check {
               text-align: right;
@@ -889,17 +902,6 @@ button {
   .necessary_message {
     font-size: 10px;
     padding: 2.5px 7.5px;
-  }
-  #select_year {
-    height: 45px;
-    width: 80px;
-    padding: 0 0 0 10px;
-  }
-  #select_month,
-  #select_day {
-    height: 45px;
-    width: 60px;
-    padding: 0 0 0 10px;
   }
 
   /*フッターのスタイル*/
