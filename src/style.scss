@@ -257,7 +257,7 @@ button {
   }
 }
 .login-container-title,
-.register-title {
+.register-container-title {
   font-weight: bold;
   font-size: 28px;
   color: #2a2e3d;
@@ -450,6 +450,31 @@ button {
       &-items {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        &-question {
+          font-weight: bold;
+          font-size: 20px;
+          color: #263238;
+          margin: 0 0 11px;
+        }
+
+        &-question br {
+          display: none;
+        }
+        &-guide_check {
+          margin: auto;
+          font-size: 16px;
+          color: #263238;
+        }
+        &-guide {
+          display: flex;
+          color: #1e88e5;
+          font-size: 13px;
+          text-decoration: none;
+          align-items: center;
+          &-text {
+            margin: 0 5px 0 0;
+          }
+        }
       }
       &-message {
         font-size: 16px;
@@ -465,30 +490,6 @@ button {
         font-size: 14px;
         color: #455a64;
         margin: 16px 0 5px 0;
-      }
-      &-question {
-        font-weight: bold;
-        font-size: 20px;
-        color: #263238;
-        margin: 0 0 11px;
-      }
-      &-question br {
-        display: none;
-      }
-      &-guide {
-        display: flex;
-        color: #1e88e5;
-        font-size: 13px;
-        text-decoration: none;
-        align-items: center;
-        &-text {
-          margin: 0 5px 0 0;
-        }
-        &-guide_check {
-          margin: auto;
-          font-size: 16px;
-          color: #263238;
-        }
       }
     }
     &-card:not(:nth-of-type(5)) {
@@ -772,6 +773,7 @@ button {
       margin: 0 10px;
       &-title {
         font-size: 18px;
+        padding: 50px 0 28px;
       }
       &-stepbar {
         margin: 0 0 19px 0;
@@ -863,20 +865,21 @@ button {
           font-size: 12px;
           margin: 0 0 30px 0;
         }
-        &-question {
-          font-size: 18px;
-          text-align: center;
-          margin: 0 0 17px;
-        }
-        &-question br {
-          display: block;
-        }
+
         &-items {
           display: flex;
           flex-flow: column;
-        }
-        &-guide {
-          margin: auto;
+          &-guide {
+            margin: auto;
+          }
+          &-question {
+            font-size: 18px;
+            text-align: center;
+            margin: 0 0 17px;
+          }
+          &-question br {
+            display: block;
+          }
         }
       }
       &-card:not(:nth-of-type(5)) {

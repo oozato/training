@@ -241,14 +241,14 @@ class Register extends React.Component {
           <div className="register-container-card ">
             <div className="register-container-card-items">
               <div>
-                <p className="register-container-card-question">
+                <p className="register-container-card-items-question">
                   好条件の非公開求人の
                   <br />
                   ご紹介を受けますか？
                 </p>
               </div>
 
-              <div className="register-container-card-form-group-guide_check">
+              <div className="register-container-card-items-guide_check">
                 <div className="register-container-card-form-group-guide_check-item">
                   <label>
                     <input
@@ -260,8 +260,8 @@ class Register extends React.Component {
                   </label>
                 </div>
               </div>
-              <Link to="#" className="register-container-card-guide">
-                <p className="register-container-card-guide-text">
+              <Link to="#" className="register-container-card-items-guide">
+                <p className="register-container-card-items-guide-text">
                   非公開求人について
                 </p>
                 <img src={question_btn} />
