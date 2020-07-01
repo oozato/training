@@ -36,9 +36,9 @@ class Register extends React.Component {
               登録完了！
             </p>
           </div>
-          <h2 className="register-container-input_message">
+          <p className="register-container-input_message">
             下記の項目を入力してください。
-          </h2>
+          </p>
           <p className="register-container-attention">
             ※<span className="necessary_message">必須</span>は必須項目です。
           </p>
@@ -157,7 +157,9 @@ class Register extends React.Component {
                     <input
                       className="register-container-card-form-group-gender-container-button"
                       type="radio"
-                      name="male"
+                      name="gender"
+                      value="male"
+                      checked
                     />
                     <div className="register-container-card-form-group-gender-container-tile">
                       <div className="register-container-card-form-group-gender-container-tile-icon">
@@ -172,7 +174,8 @@ class Register extends React.Component {
                     <input
                       className="register-container-card-form-group-gender-container-button"
                       type="radio"
-                      name="female"
+                      name="gender"
+                      value="female"
                     />
                     <div className="register-container-card-form-group-gender-container-tile">
                       <div className="register-container-card-form-group-gender-container-tile-icon">
@@ -216,7 +219,7 @@ class Register extends React.Component {
               </p>
               <div className="register-container-card-form">
                 <input
-                  name="password"
+                  name="password_input"
                   type="password"
                   placeholder="半角英数8文字〜12文字以内"
                   className="register-container-card-form-group-input"
@@ -226,7 +229,7 @@ class Register extends React.Component {
                   <div className="register-container-card-form-group-pass_check-item">
                     <label>
                       <input
-                        name="checkbox_view_password"
+                        name="password_view"
                         type="checkbox"
                         className="register-container-card-form-group-pass_check-item-box"
                       />
@@ -252,7 +255,7 @@ class Register extends React.Component {
                 <div className="register-container-card-form-group-guide_check-item">
                   <label>
                     <input
-                      name="checkbox_guide"
+                      name="guide"
                       type="checkbox"
                       className="register-container-card-form-group-guide_check-item-box"
                     />
