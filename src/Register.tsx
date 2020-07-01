@@ -52,7 +52,7 @@ class Register extends React.Component {
                   姓 <span className="necessary_message">必須</span>
                 </p>
                 <input
-                  name="family_name_necessary"
+                  name="last_name"
                   type="text"
                   placeholder="例）琉球"
                   className="register-container-card-form-group-input"
@@ -60,11 +60,11 @@ class Register extends React.Component {
                 />
               </div>
               <div className="register-container-card-form-group">
-                <p className="registe-containerr-card-form-group-title">
+                <p className="register-container-card-form-group-title">
                   名 <span className="necessary_message">必須</span>
                 </p>
                 <input
-                  name="first_name_necessary"
+                  name="first_name"
                   type="text"
                   placeholder="例）太郎"
                   className="register-container-card-form-group-input"
@@ -77,7 +77,7 @@ class Register extends React.Component {
                 </p>
 
                 <input
-                  name="family_name"
+                  name="last_name_phonetic"
                   type="text"
                   placeholder="例）りゅうきゅう"
                   className="register-container-card-form-group-input"
@@ -89,7 +89,7 @@ class Register extends React.Component {
                 </p>
 
                 <input
-                  name="first_name"
+                  name="first_name_phonetic"
                   type="text"
                   placeholder="例）たろう"
                   className="register-container-card-form-group-input"
@@ -157,7 +157,7 @@ class Register extends React.Component {
                     <input
                       className="register-container-card-form-group-gender-container-button"
                       type="radio"
-                      name="radio_button_man"
+                      name="male"
                     />
                     <div className="register-container-card-form-group-gender-container-tile">
                       <div className="register-container-card-form-group-gender-container-tile-icon">
@@ -172,7 +172,7 @@ class Register extends React.Component {
                     <input
                       className="register-container-card-form-group-gender-container-button"
                       type="radio"
-                      name="radio_button_woman"
+                      name="female"
                     />
                     <div className="register-container-card-form-group-gender-container-tile">
                       <div className="register-container-card-form-group-gender-container-tile-icon">
