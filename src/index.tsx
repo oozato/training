@@ -1,15 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./style.css";
+import { BrowserRouter, Route, Link, Switch } from "react-router-dom";
+import "./style.scss";
 import Login from "./Login";
 import Header from "./Head";
 import Footer from "./Foot";
+import Register from "./Register";
 
 ReactDOM.render(
-  <React.StrictMode>
+  <BrowserRouter>
     <Header />
-    <Login />
+    <Switch>
+      <Route exact path="/login" component={Login} />
+      <Route exact path="/register" component={Register} />
+    </Switch>
     <Footer />
-  </React.StrictMode>,
+  </BrowserRouter>,
   document.getElementById("root")
 );

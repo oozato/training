@@ -1,5 +1,6 @@
 import React from "react";
-import "./style.css";
+import { BrowserRouter, Route, Link } from "react-router-dom";
+import "./style.scss";
 import ReturnIcon from "./Icon/ReturnIcon.svg";
 import twitter from "./Icon/twitter.svg";
 import facebook from "./Icon/facebook.svg";
@@ -10,68 +11,68 @@ function Foot() {
   return (
     <div className="wrap">
       <div className="footer">
-        <a href="#" className="footer-page_return">
+        <Link to="#" className="footer-page_return">
           <img src={ReturnIcon} />
           <div className="footer-page_return-text">ページの先頭へ戻る</div>
-        </a>
+        </Link>
         <div className="footer-sns">
           <div className="footer-sns-header">公式アカウント</div>
           <div>
-            <a href="#">
+            <Link to="#">
               <img src={twitter} className="footer-sns-header-icon" />
-            </a>
-            <a href="#">
+            </Link>
+            <Link to="#">
               <img src={facebook} className="footer-sns-header-icon" />
-            </a>
+            </Link>
           </div>
         </div>
 
         <div className="footer-help">
-          <a href="#" className="footer-help-item">
+          <Link to="#" className="footer-help-item">
             ご利用ガイド
-          </a>
-          <a href="#" className="footer-help-item">
+          </Link>
+          <Link to="#" className="footer-help-item">
             よくある質問
-          </a>
-          <a href="#" className="footer-help-item">
+          </Link>
+          <Link to="#" className="footer-help-item">
             お問い合わせ
-          </a>
-          <a href="#" className="footer-help-item">
+          </Link>
+          <Link to="#" className="footer-help-item">
             ご意見・ご質問
-          </a>
+          </Link>
         </div>
 
         <div className="footer-info">
-          <a className="footer-info-item" href="#">
+          <Link className="footer-info-item" to="#">
             ジョブアンテナについて
-          </a>
-          <a className="footer-info-item" href="#">
+          </Link>
+          <Link className="footer-info-item" to="#">
             利用規約
-          </a>
-          <a className="footer-info-item" href="#">
+          </Link>
+          <Link className="footer-info-item" to="#">
             運営会社
-          </a>
-          <a className="footer-info-item" href="#">
+          </Link>
+          <Link className="footer-info-item" to="#">
             プライバシーポリシー
-          </a>
+          </Link>
         </div>
 
         <div className="footer-foot">
           <div className="footer-foot-brand">
-            <a href="#">
+            <Link to="#">
               <img
                 src={BlackJobantennaIcon}
                 className="footer-foot-brand-icon"
               />
-            </a>
+            </Link>
 
             <div className="footer-foot-brand-copyright">
               Copyright© RyukyuInteractive, Inc. All Rights Reserved.
             </div>
           </div>
-          <a href="#">
+          <Link to="#">
             <img src={searchButton} className="footer-foot-search" />
-          </a>
+          </Link>
         </div>
       </div>
     </div>

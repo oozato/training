@@ -1,6 +1,7 @@
 import React from "react";
 import WhiteJobantennaIcon from "./Icon/WhiteJobantennaIcon.svg";
-import "./style.css";
+import "./style.scss";
+import { BrowserRouter, Route, Link } from "react-router-dom";
 
 function Head() {
   return (
@@ -10,29 +11,32 @@ function Head() {
           <div className="head">
             <div className="head-left">
               <img src={WhiteJobantennaIcon} className="head-left-icon" />
-              <a href="#" className="head-left-search">
+              <Link to="#" className="head-left-search">
                 求人を探す
-              </a>
-              <a href="#" className="head-left-search">
+              </Link>
+              <Link to="#" className="head-left-search">
                 会社を探す
-              </a>
-              <a href="#" className="head-left-search">
+              </Link>
+              <Link to="#" className="head-left-search">
                 転職相談をする
-              </a>
-              <a href="#" className="head-left-trouble">
+              </Link>
+              <Link to="#" className="head-left-trouble">
                 採用にお困りの企業様へ
-              </a>
+              </Link>
             </div>
             <div className="head-right">
-              <a href="#" className="head-right-signup head-right-icon">
+              <Link
+                to="/register"
+                className="head-right-signup head-right-icon"
+              >
                 会員登録
-              </a>
-              <a href="#" className="head-right-login head-right-icon">
+              </Link>
+              <Link to="/login" className="head-right-login head-right-icon">
                 ログイン
-              </a>
-              <a href="#" className="head-right-menu head-right-icon">
+              </Link>
+              <Link to="#" className="head-right-menu head-right-icon">
                 メニュー
-              </a>
+              </Link>
             </div>
           </div>
         </div>
